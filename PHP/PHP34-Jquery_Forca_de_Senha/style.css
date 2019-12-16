@@ -1,0 +1,38 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+#form-senha{
+    margin-top: 10vh;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.form-group{
+    width: 190px;
+    display: flex;
+}
+
+label{
+    width: 50px;
+    line-height: 30px;
+}
+
+.forca{
+    width: 138px;
+    height: 30px;
+    background-color: darkgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}

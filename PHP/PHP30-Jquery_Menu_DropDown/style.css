@@ -1,0 +1,37 @@
+.cont{
+    width: 100%;
+}
+
+.menu{
+    height: 40px;
+    background-color: black;
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    float: left;
+    padding: 0px 20px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.menu1{
+    height: 40px;
+}
+
+.menu2{
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    background-color: black;
+    display: none;
+    border-radius: 0 0 10px 10px;  
+}

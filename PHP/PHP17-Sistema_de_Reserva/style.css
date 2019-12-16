@@ -1,0 +1,36 @@
+#form-adicionar{
+    width: 450px;
+}
+
+.container-fluid{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    justify-content: flex-start;
+}
+
+label{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#btn_add_submit{
+    display: flex;
+    justify-content: center;
+}
+
+.botoes{
+    display: flex;
+}
+
+.btn{
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 40px;
+}

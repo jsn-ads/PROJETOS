@@ -1,0 +1,34 @@
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+	background-color: grey;
+}
+
+.tabela{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 400px;
+	border: 1px solid #000;
+
+}
+	.nome{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 298px;
+		background-color: red;
+		border: 1px solid #000;
+	}
+
+	.idade{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 98px;
+		background-color: green;
+		border: 1px solid #000;
+	}

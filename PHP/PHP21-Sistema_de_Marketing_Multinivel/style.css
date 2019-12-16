@@ -1,0 +1,18 @@
+form{
+    width: 300px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    text-align: center;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}

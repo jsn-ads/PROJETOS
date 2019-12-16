@@ -1,0 +1,26 @@
+body{
+    background-color: aquamarine;
+}
+
+.ctr{
+    width: 100%;
+}
+
+.menu{
+    width: 900px;
+    height: 70px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -400px;
+}
+
+.icone{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}

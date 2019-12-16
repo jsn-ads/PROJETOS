@@ -1,0 +1,36 @@
+.ctr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tabela{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+.horaescolha{
+    width: 300px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: black;
+    position: absolute;
+    display: none;
+}
+
+button{
+    margin: 3px;
+}
+
+.form-group{
+    width: 100px;
+}
+
+input{
+    text-align: center;
+}

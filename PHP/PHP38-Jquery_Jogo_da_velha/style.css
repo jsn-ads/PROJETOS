@@ -1,0 +1,35 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+.area{
+    width: 80px;
+    height: 65px;
+    border: 2px solid black;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.placar{
+    width: 252px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+img{
+    border: 0;
+    height: 50px;
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+#img{
+    margin-top: -60px;
+    margin-left: 0;
+}
+
+#vencedor{
+    display: none;
+}

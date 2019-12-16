@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+form{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item{
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    text-align: center;
+}
+
+

@@ -1,0 +1,82 @@
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset{
+    text-align: center;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titulo{
+    width: 300px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+#img{
+    width: 300px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+#btn{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.produto{
+    margin: 5px;
+    width: 204.5px;
+    height: 250px;
+    border: 1px solid chartreuse;
+}
+
+.imagem{
+    width: 203px;
+    height: 200px;
+}
+
+.titulo{
+    width: 203px;
+    height: 49px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 49px;
+    background-color: chartreuse;
+
+}
+
+img{
+    width: 203px;
+    height: 200px;
+}
+
+#formulario{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-file{
+    width: 80%;
+    margin-left: 5px;
+}

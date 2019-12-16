@@ -1,0 +1,12 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 500px;
+}
+
+.form-group{
+    text-align: center;
+}

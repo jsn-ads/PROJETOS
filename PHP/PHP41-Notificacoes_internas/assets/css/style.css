@@ -1,0 +1,14 @@
+.notificaçoes{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    font-size: 16px;
+}
+
+.not00{
+    background-color: red;
+    color: white;
+}

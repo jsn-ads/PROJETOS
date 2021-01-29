@@ -1,3 +1,5 @@
+<?php require 'config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +17,13 @@
             </div>
             
             <ul class="nav navbar-header navbar-right">
-                <li class=""><a class="nav-link text-light" href="">Cadastre-se</a></li>
-                <li class=""><a class="nav-link text-light" href="">Login</a></li>
+                <?php if(isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])):?>
+                    <li class=""><a class="nav-link text-light" href="meus-anuncios.php">Meus Anúncios</a></li>
+                    <li class=""><a class="nav-link text-light" href="sair.php">Sair</a></li>
+                <?php else: ?>
+                    <li class=""><a class="nav-link text-light" href="cadastre-se.php">Cadastre-se</a></li>
+                    <li class=""><a class="nav-link text-light" href="login.php">Login</a></li>
+                <?php endif; ?>
             </ul>
             
         </div>

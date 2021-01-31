@@ -7,8 +7,8 @@
             $u = new Usuarios();
             
             if(isset($_POST['nome']) && !empty($_POST['nome'])){
-                $nome = addslashes($_POST['nome']);
-                $email = addslashes($_POST['e-mail']);
+                $nome = ucwords(strtolower(addslashes($_POST['nome'])));
+                $email = strtolower(addslashes($_POST['e-mail']));
                 $senha = $_POST['senha'];
                 $telefone = addslashes($_POST['telefone']);
 

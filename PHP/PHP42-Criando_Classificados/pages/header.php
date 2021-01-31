@@ -18,7 +18,7 @@
             
             <ul class="nav navbar-header navbar-right">
                 <?php if(isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])):?>
-                    <li class=""><a class="nav-link text-light" href="">Bem Vindo <?php echo $_SESSION['cLogin'];?></a></li>
+                    <li class=""><a class="nav-link text-light" href="">Bem Vindo <?php echo $_SESSION['cLogin']['nome'];?></a></li>
                     <li class=""><a class="nav-link text-light" href="meus-anuncios.php">Meus Anúncios</a></li>
                     <li class=""><a class="nav-link text-light" href="sair.php">Sair</a></li>
                 <?php else: ?>

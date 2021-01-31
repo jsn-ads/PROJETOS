@@ -1,6 +1,8 @@
 <?php
     class Usuarios{
 
+        // função cadastrar usuario
+
         public function cadastrar($nome, $email, $senha, $telefone){
 
             global $pdo;
@@ -26,6 +28,8 @@
             }
         }
 
+        //funcão de login do usuario
+
         public function login($email, $senha){
 
             global $pdo;
@@ -42,10 +46,8 @@
 
                 $dados = $this->info($id);
 
-                $_SESSION['cLogin'] = $dados['nome'];
+                $_SESSION['cLogin'] = $dados;
 
-                echo $_SESSION['cLogin'];
-                
                 return true;
 
             }else{
@@ -53,6 +55,9 @@
             }
 
         }
+
+
+        //função de pegar dados do usuario pelo id
 
         public function info($id){
 

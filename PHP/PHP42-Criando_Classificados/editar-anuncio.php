@@ -15,8 +15,13 @@ if(empty($_SESSION['cLogin'])){
         $valor = addslashes($_POST['valor']);
         $descricao = ucfirst(strtolower(addslashes($_POST['descricao'])));
         $estado = addslashes($_POST['estado']);
+        if(isset($_FILES['fotos'])){
+            $fotos = $_FILES['fotos'];
+        }else{
+            $fotos = array();
+        }
 
-        $a->editAnuncio($titulo,$categoria,$valor,$descricao,$estado, $_GET['id']);
+        $a->editAnuncio($titulo,$categoria,$valor,$descricao,$estado, $fotos, $_GET['id']);
         ?>
             <div class="alert alert-success">
                 Produto Editado com sucesso !
@@ -80,6 +85,29 @@ if(empty($_SESSION['cLogin'])){
                     <option value="1" <?php echo ($info['estado']==1)?'selected="selected"':'';?>>SEMI-NOVO</option>
                     <option value="2" <?php echo ($info['estado']==2)?'selected="selected"':'';?>>NOVO</option>
                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="add_foto">Fotos do anúncio</label>
+                <input type="file" name="fotos[]" multiple>
+                </br></br>
+                
+                <div class="card">
+                    <div class="card">
+                        <div class="card-header">Fotos do Anúncio</div>
+
+                        <div class="card-body">
+                            <?php foreach($info['fotos'] as $foto):?>
+                            <div class="foto_item">
+                                <img src="assets/img/anuncios/<?php echo $foto['url']; ?>" class="img-thumbnail" boder="0"><br>
+                                <a href="excluir-foto.php?id=<?php echo $foto['id'];?>" class="btn btn-outline-dark">Excluir</a>
+                            </div>
+                            <?php endforeach ;?>
+                        </div>
+                    </div>
+                    
+                </div>
+
             </div>
 
             <input type="Submit" value="Salvar" class="btn btn-outline-dark"/>

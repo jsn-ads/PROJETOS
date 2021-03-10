@@ -4,7 +4,12 @@
     require 'classes/usuarios.class.php';
     $a = new Anuncios();
     $u = new Usuarios();
-    $total_anuncios = $a->getTotalAnuncios();
+    $filtros = array(
+        'categoria' => '',
+        'preco' => '',
+        'estado' => ''
+    );
+    $total_anuncios = $a->getTotalAnuncios($filtros);
     $total_usuarios = $u->getTotalUsuarios();
 
     if(isset($_GET['id']) && !empty($_GET['id'])){
